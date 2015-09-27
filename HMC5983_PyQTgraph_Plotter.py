@@ -25,21 +25,11 @@ import serial
 import codecs
 
 app = QtGui.QApplication([])
-#p = pg.plot()
-#p.setWindowTitle('live plot from serial')
-#curve = p.plot()
-#data1 = [0]
-
 bytecount = 300   # This variable sets the number of bytes to read in
 cnt = 0
 XA = []
 YA = []
 ZA = []
-
-#win = pg.GraphicsWindow()
-#win.setWindowTitle('pyqtgraph example: Scrolling Plots')
-#p1 = win.addPlot()
-#p2 = win.addPlot()
 p=pg.plot()
 p.setWindowTitle('Live Plot from Serial')
 p.setInteractive(True)
